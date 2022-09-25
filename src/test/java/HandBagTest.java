@@ -35,7 +35,9 @@ public class HandBagTest {
         b.addItem("Cheese");
         b.addItem("Eggs");
         assertEquals(2, b.getNumberOfContents());
+        System.out.println(b.getNumberOfContents());
     }
+
 
     @Test(timeout = 50)
     public void testGetNumberOfContentsPop() {
@@ -43,6 +45,7 @@ public class HandBagTest {
         b.addItem("Eggs");
         assertEquals("Eggs", b.popItem());
         assertEquals(1, b.getNumberOfContents());
+        System.out.println(b.getNumberOfContents());
     }
 
     @Test(timeout = 50)

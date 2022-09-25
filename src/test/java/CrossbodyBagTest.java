@@ -29,7 +29,8 @@ public class CrossbodyBagTest {
     @Test(timeout = 50)
     public void TestEnhance() {
         b.enhance();
-        assertEquals(6, b.getCapacity());
+        assertEquals(6,
+                b.getCapacity());
     }
 
     @Test(timeout = 50)
